@@ -1,2 +1,2 @@
 org.springframework.boot.SpringApplicationRunListener=\
- com.framework.banner.ApplicationRunListenerAspect
+ com.framework.ApplicationRunListenerAspect

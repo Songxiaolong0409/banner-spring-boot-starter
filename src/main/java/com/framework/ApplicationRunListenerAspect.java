@@ -1,12 +1,17 @@
 /**
  * Copyright @2018 xiaolong.song All Rights Reserved
  */
-package com.framework.banner;
+package com.framework;
 
+import com.framework.banner.CustomBanner;
+import com.framework.port.PortApplicationEnvironmentPreparedEventListener;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringApplicationRunListener;
+import org.springframework.context.ApplicationListener;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
+
+import java.util.Set;
 
 /**
  * @author xiaolong.song
@@ -20,6 +25,7 @@ public class ApplicationRunListenerAspect implements SpringApplicationRunListene
     private SpringApplication application;
 
     public ApplicationRunListenerAspect(SpringApplication application, String[] args) {
+        application.addListeners(new PortApplicationEnvironmentPreparedEventListener());
         this.application = application;
     }
 
