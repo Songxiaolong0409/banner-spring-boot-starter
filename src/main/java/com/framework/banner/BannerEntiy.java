@@ -7,7 +7,7 @@ public class BannerEntiy {
 
     private StringBuffer banner=new StringBuffer("");
 
-    private String version="(v1.0)";
+    private String version="(v2.0)";
 
     private String copyright="xiaolong.song";
 }

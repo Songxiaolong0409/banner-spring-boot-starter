@@ -18,16 +18,26 @@ public class CustomBanner implements IBanner {
     @Override
     public BannerEntiy getBannerEntiy() {
         StringBuffer stringBuffer=new StringBuffer();
-        stringBuffer.append("  ______                             ").append(",");
+        /*stringBuffer.append("  ______                             ").append(",");
         stringBuffer.append(" |  ____|                            ").append(",");
         stringBuffer.append(" | |__ _____  _____ ___  _ __  _ __  ").append(",");
         stringBuffer.append(" |  __/ _ \\ \\/ / __/ _ \\| '_ \\| '_ \\ ").append(",");
         stringBuffer.append(" | | | (_) >  < (_| (_) | | | | | | |").append(",");
-        stringBuffer.append(" |_|  \\___/_/\\_\\___\\___/|_| |_|_| |_|").append(",");
+        stringBuffer.append(" |_|  \\___/_/\\_\\___\\___/|_| |_|_| |_|").append(",");*/
+
+
+        stringBuffer.append(" __  __       _     _ _      _____       _").append(",");
+        stringBuffer.append("|  \\/  |     | |   (_) |    |  __ \\     (_)").append(",");
+        stringBuffer.append("| \\  / | ___ | |__  _| | ___| |  | |_ __ ___   _____").append(",");
+        stringBuffer.append("| |\\/| |/ _ \\| '_ \\| | |/ _ \\ |  | | '__| \\ \\ / / _ \\").append(",");
+        stringBuffer.append("| |  | | (_) | |_) | | |  __/ |__| | |  | |\\ V /  __/").append(",");
+        stringBuffer.append("|_|  |_|\\___/|_.__/|_|_|\\___|_____/|_|  |_| \\_/ \\___|").append(",");
+
+
 
         BannerEntiy bannerEntiy=new BannerEntiy();
         bannerEntiy.setBanner(stringBuffer);
-        bannerEntiy.setCopyright("Fih-foxconn");
+        bannerEntiy.setCopyright("MobileDrive");
 
         return bannerEntiy;
     }
